@@ -1,17 +1,17 @@
 <template>
   <section id="hero" class="hero container">
     <div class="hero__main">
-      <h1 class="hero__name">张三</h1>
-      <p class="hero__title">Frontend Engineer • Vue / Vite • UI-focused</p>
-      <p class="hero__summary">我构建可访问、性能良好且维护性高的前端应用，喜欢组件化与细致的样式设计。</p>
+      <h1 class="hero__name">Edward Tang</h1>
+      <p class="hero__title">Student • Vue / Vite Foucsed</p>
+      <p class="hero__summary">I build  frontend applications with a focus on contemporary design.</p>
       <div class="hero__meta">
-        <a href="mailto:zhangsan@example.com">zhangsan@example.com</a>
+        <a href="mailto:tangfq_edward@outlook.com">tangfq_edward@outlook.com</a>
         <span>•</span>
-        <a href="#projects">项目集</a>
+        <a href="#projects">Projects</a>
       </div>
     </div>
     <div class="hero__photo" aria-hidden="true">
-      <div class="avatar">ZS</div>
+      <div class="avatar">ET</div>
     </div>
   </section>
 </template>

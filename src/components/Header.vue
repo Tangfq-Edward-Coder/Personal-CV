@@ -2,17 +2,17 @@
   <header class="header">
     <div class="container header__inner">
       <div class="brand"> 
-        <a href="#hero">张三 · Frontend Engineer</a>
+        <a href="#hero">Edward Tang</a>
       </div>
       <nav class="nav" aria-label="Primary">
-        <a href="#about">关于</a>
-        <a href="#experience">经验</a>
-        <a href="#projects">项目</a>
-        <a href="#skills">技能</a>
-        <a href="#contact">联系</a>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
       </nav>
       <div class="actions">
-        <button class="btn" @click="print">下载 / 打印</button>
+        <button class="btn" @click="print">Download / Print</button>
       </div>
     </div>
   </header>
