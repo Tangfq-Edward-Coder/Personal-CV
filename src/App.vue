@@ -26,7 +26,7 @@ import Hero from './components/Hero.vue'
 
 export default {
   name: 'App',
-  components: { Header, Hero, About, Experience, Projects, Skills, Contact, Footer }
+  components: { Header, Hero }
 }
 </script>
 
