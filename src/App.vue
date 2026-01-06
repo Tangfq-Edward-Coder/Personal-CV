@@ -1,28 +1,28 @@
 <template>
   <div id="app" class="resume">
-    <a class="skip" href="#main">跳到内容</a>
+    <a class="skip" href="#main">Skip to ...</a>
     <Header />
     <main id="main">
       <Hero />
-      <About />
+      <!-- <About />
       <Experience />
       <Projects />
       <Skills />
-      <Contact />
+      <Contact /> -->
     </main>
-    <Footer />
+    <!-- <Footer /> -->
   </div>
 </template>
 
 <script>
 import Header from './components/Header.vue'
 import Hero from './components/Hero.vue'
-import About from './components/About.vue'
-import Experience from './components/Experience.vue'
-import Projects from './components/Projects.vue'
-import Skills from './components/Skills.vue'
-import Contact from './components/Contact.vue'
-import Footer from './components/Footer.vue'
+// import About from './components/About.vue'
+// import Experience from './components/Experience.vue'
+// import Projects from './components/Projects.vue'
+// import Skills from './components/Skills.vue'
+// import Contact from './components/Contact.vue'
+// import Footer from './components/Footer.vue'
 
 export default {
   name: 'App',

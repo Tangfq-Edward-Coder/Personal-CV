@@ -11,15 +11,16 @@
       </div>
     </div>
     <div class="hero__photo" aria-hidden="true">
-      <img :src="avatarImage" alt="Avatar" class="avatar">
+      <!-- <img src="https://cdn.luogu.com.cn/upload/image_hosting/wr6lstah.png" alt = "Axvatar" class = "avatar"> -->
+      <img src="avatarImage" alt="Avatar" class="avatar">
     </div>
   </section>
 </template>
 
 <script>
-import avatarImage from '@/assets/avatar.jpeg'
+import avatarImage from '/workspaces/code-space/src/assets/avatar.jpeg'
 
-export default { 
+export default {
   name: 'Hero',
   data() {
     return {
@@ -35,6 +36,6 @@ export default {
 .hero__title{color:var(--muted-text);margin:0.25rem 0}
 .hero__summary{margin:0.5rem 0;color:var(--text)}
 .hero__meta a{color:var(--accent);text-decoration:none}
-.avatar{width:96px;height:96px;border-radius:8px;background:linear-gradient(135deg,var(--accent),#7b61ff);display:flex;align-items:center;justify-content:center;color:white;font-weight:700}
+.avatar{width:106px;height:106px;border-radius:8px;background:linear-gradient(135deg,var(--accent),#7b61ff);display:flex;align-items:center;justify-content:center;color:white;font-weight:700}
 @media (max-width:700px){.hero{flex-direction:column;align-items:flex-start}}
 </style>
