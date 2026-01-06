@@ -11,21 +11,21 @@
       </div>
     </div>
     <div class="hero__photo" aria-hidden="true">
-      <!-- <img src="https://cdn.luogu.com.cn/upload/image_hosting/wr6lstah.png" alt = "Axvatar" class = "avatar"> -->
-      <img src="avatarImage" alt="Avatar" class="avatar">
+      <img src="https://cdn.luogu.com.cn/upload/image_hosting/wr6lstah.png" alt = "Axvatar" class = "avatar">
+      <!-- <img src="avatarImage" alt="Avatar" class="avatar"> -->
     </div>
   </section>
 </template>
 
 <script>
-import avatarImage from '/workspaces/code-space/src/assets/avatar.jpeg'
+// import avatarImage from '/workspaces/code-space/src/assets/avatar.jpeg'
 
 export default {
   name: 'Hero',
-  data() {
-    return {
-      avatarImage
-    }
+  // data() {
+  //   return {
+  //     avatarImage
+  //   }
   }
 }
 </script>
