@@ -5,6 +5,6 @@ export default defineConfig({
   plugins: [vue()],
   base: '/Personal-CV/',
   build: {
-    outDir: 'docs'
+    outDir: 'dist'
   }
 })
