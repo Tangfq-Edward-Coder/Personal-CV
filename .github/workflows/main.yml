@@ -41,11 +41,18 @@ jobs:
         run: npm run build
       - name: Setup Pages
         uses: actions/configure-pages@v4
+      - name: Show build output (debug)
+        run: |
+          echo "PWD: $(pwd)"
+          ls -la
+          echo "Dist size:"
+          du -sh dist || true
+          ls -la dist || true
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Upload dist folder
-          path: './dist'
+          # Upload dist folder (match files recursively to avoid empty-path error)
+          path: './dist/**'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
