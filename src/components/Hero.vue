@@ -26,7 +26,7 @@ export default {
   //   return {
   //     avatarImage
   //   }
-  }
+  //}
 }
 </script>
 
