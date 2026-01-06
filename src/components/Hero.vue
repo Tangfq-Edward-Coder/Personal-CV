@@ -11,13 +11,22 @@
       </div>
     </div>
     <div class="hero__photo" aria-hidden="true">
-      <div class="avatar">ET</div>
+      <img :src="avatarImage" alt="Avatar" class="avatar">
     </div>
   </section>
 </template>
 
 <script>
-export default { name: 'Hero' }
+import avatarImage from '@/assets/avatar.jpeg'
+
+export default { 
+  name: 'Hero',
+  data() {
+    return {
+      avatarImage
+    }
+  }
+}
 </script>
 
 <style scoped>
