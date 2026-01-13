@@ -12,7 +12,7 @@
         <a href="#contact">Contact</a>
       </nav>
       <div class="actions">
-        <button class="btn" @click="print">Download / Print</button>
+        <button class="btn" onclick="window.print()">Download / Print</button>
       </div>
     </div>
   </header>
@@ -20,43 +20,46 @@
 
 <script>
 export default {
-  name: 'Header',
-  methods: {
-    print() {
-      window.print()
-    }
-  }
+  name: 'Header'
 }
 </script>
 
 <style scoped>
 .header {
-  border-bottom: 1px solid var(--muted);
-  background: var(--bg-elev);
+  border-bottom: 1px solid #e6eef8;
+  background: #ffffff;
 }
+
 .header__inner {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 16px;
   justify-content: space-between;
-  padding: 1rem 0;
+  padding: 16px 0;
 }
-.brand a{
+
+.brand a {
   font-weight: 700;
-  color: var(--text);
+  color: #0f1720;
   text-decoration: none;
 }
-.nav a{
-  margin: 0 0.5rem;
-  color: var(--muted-text);
+
+.nav a {
+  margin: 0 8px;
+  color: #6b7280;
   text-decoration: none;
 }
-.btn{
-  background: var(--accent);
+
+.btn {
+  background: #2563eb;
   color: white;
   border: none;
-  padding: 0.5rem 0.75rem;
+  padding: 8px 12px;
   border-radius: 6px;
   cursor: pointer;
+}
+
+.btn:hover {
+  background: #1d4ed8;
 }
 </style>
