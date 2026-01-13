@@ -1,6 +1,6 @@
 <template>
   <div id="app" class="resume">
-    <a class="skip" href="#main">Skip to ...</a>
+    <a class="skip" href="#main">Skip to main content</a>
     <Header />
     <main id="main">
       <Hero />
@@ -31,21 +31,21 @@ export default {
   top: auto;
   width: 1px;
   height: 1px;
-  overflow: hidden
+  overflow: hidden;
 }
 
 .skip:focus {
   position: static;
   width: auto;
   height: auto;
-  padding: 0.25rem;
-  left: 1rem;
-  top: 1rem;
-  background: var(--accent);
-  color: #fff
+  padding: 4px;
+  left: 16px;
+  top: 16px;
+  background: #2563eb;
+  color: #fff;
 }
 
 main {
-  padding: 1rem 0
+  padding: 16px 0;
 }
 </style>

@@ -10,9 +10,9 @@ export default { name: 'Footer' }
 
 <style scoped>
 .footer {
-  border-top: 1px solid var(--muted);
-  padding: 1rem 0;
-  color: var(--muted-text);
-  text-align: center
+  border-top: 1px solid #e6eef8;
+  padding: 16px 0;
+  color: #6b7280;
+  text-align: center;
 }
 </style>

@@ -1,7 +1,7 @@
 <template>
   <section id="about" class="container section about">
     <h2>Biography</h2>
-    <p>SSAP Student familiar with Vue and contemporary English.</p>
+    <p>High school student learning web development and English.</p>
 
     <dl class="meta-list">
       <div>
@@ -30,29 +30,31 @@ export default { name: 'About' }
 
 <style scoped>
 .section {
-  padding: 1.25rem 0
+  padding: 20px 0;
 }
 
 .meta-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-  gap: 0.75rem;
-  margin-top: 0.75rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.meta-list > div {
+  width: 140px;
+  text-align: center;
 }
 
 dt {
   font-weight: 600;
 }
 
-.meta-list>div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  min-width: 140px;
-}
-
 dd {
   margin: 0;
+}
+
+.meta-list a {
+  color: #2563eb;
+  text-decoration: none;
 }
 </style>

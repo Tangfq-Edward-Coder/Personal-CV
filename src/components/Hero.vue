@@ -2,8 +2,8 @@
   <section id="hero" class="hero container">
     <div class="hero__main">
       <h1 class="hero__name">Edward Tang</h1>
-      <p class="hero__title">Student • Vue / Vite Foucsed</p>
-      <p class="hero__summary">I build  frontend applications with a focus on contemporary design.</p>
+      <p class="hero__title">Student • Learning Web Development</p>
+      <p class="hero__summary">I create simple websites and learn how to build web pages.</p>
       <div class="hero__meta">
         <a href="mailto:tangfq_edward@outlook.com">tangfq_edward@outlook.com</a>
         <span>•</span>
@@ -11,7 +11,7 @@
       </div>
     </div>
     <div class="hero__photo" aria-hidden="true">
-      <img src="https://cdn.luogu.com.cn/upload/image_hosting/wr6lstah.png" alt = "Axvatar" class = "avatar">
+      <img src="https://cdn.luogu.com.cn/upload/image_hosting/wr6lstah.png" alt="Avatar" class="avatar">
     </div>
   </section>
 </template>
@@ -23,11 +23,43 @@ export default {
 </script>
 
 <style scoped>
-.hero{display:flex;gap:2rem;padding:2rem 0;align-items:center}
-.hero__name{font-size:1.75rem;margin:0}
-.hero__title{color:var(--muted-text);margin:0.25rem 0}
-.hero__summary{margin:0.5rem 0;color:var(--text)}
-.hero__meta a{color:var(--accent);text-decoration:none}
-.avatar{width:106px;height:106px;border-radius:8px;background:linear-gradient(135deg,var(--accent),#7b61ff);display:flex;align-items:center;justify-content:center;color:white;font-weight:700}
-@media (max-width:700px){.hero{flex-direction:column;align-items:flex-start}}
+.hero {
+  display: flex;
+  gap: 32px;
+  padding: 32px 0;
+  align-items: center;
+}
+
+.hero__name {
+  font-size: 28px;
+  margin: 0;
+}
+
+.hero__title {
+  color: #6b7280;
+  margin: 4px 0;
+}
+
+.hero__summary {
+  margin: 8px 0;
+  color: #0f1720;
+}
+
+.hero__meta a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.avatar {
+  width: 106px;
+  height: 106px;
+  border-radius: 8px;
+}
+
+@media (max-width: 700px) {
+  .hero {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
 </style>
