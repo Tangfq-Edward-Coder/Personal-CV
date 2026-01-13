@@ -5,6 +5,7 @@
     <main id="main">
       <Hero />
       <About />
+      <Experience />
     </main>
     <Footer />
   </div>
@@ -14,11 +15,12 @@
 import Header from './components/Header.vue'
 import Hero from './components/Hero.vue'
 import About from './components/About.vue'
+import Experience from './components/Experience.vue'
 import Footer from './components/Footer.vue'
 
 export default {
   name: 'App',
-  components: { Header, Hero, About, Footer }
+  components: { Header, Hero, About, Experience, Footer }
 }
 </script>
 
