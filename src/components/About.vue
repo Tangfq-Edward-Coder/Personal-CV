@@ -1,26 +1,20 @@
 <template>
   <section id="about" class="container section about">
-    <h2>Biography</h2>
-    <p>SSAP Student familiar with Vue and contemporary English.</p>
-
-    <dl class="meta-list">
-      <div>
-        <dt>Gender</dt>
-        <dd>Male</dd>
+    <h2>Programs</h2>
+    <div class="programs-list">
+      <div class="program-item">
+        <h3>Web Development</h3>
+        <p>Building modern web applications with Vue.js and Vite</p>
       </div>
-      <div>
-        <dt>Location</dt>
-        <dd>Guangzhou, China</dd>
+      <div class="program-item">
+        <h3>Frontend Design</h3>
+        <p>Creating contemporary and user-friendly interfaces</p>
       </div>
-      <div>
-        <dt>Email</dt>
-        <dd><a href="mailto:tangfq_edward@outlook.com">tangfq_edward@outlook.com</a></dd>
+      <div class="program-item">
+        <h3>Student Projects</h3>
+        <p>Developing personal projects and learning new technologies</p>
       </div>
-      <div>
-        <dt>Website</dt>
-        <dd><a href="#projects">tangfq-edward-coder.github.io/Personal-CV</a></dd>
-      </div>
-    </dl>
+    </div>
   </section>
 </template>
 
@@ -33,26 +27,35 @@ export default { name: 'About' }
   padding: 1.25rem 0
 }
 
-.meta-list {
+.programs-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-  gap: 0.75rem;
-  margin-top: 0.75rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
 }
 
-dt {
-  font-weight: 600;
+.program-item {
+  padding: 1.25rem;
+  border: 1px solid var(--border-color, #e0e0e0);
+  border-radius: 8px;
+  background: var(--card-bg, #fff);
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
-.meta-list>div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  min-width: 140px;
+.program-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-dd {
+.program-item h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.125rem;
+  color: var(--accent);
+}
+
+.program-item p {
   margin: 0;
+  color: var(--text);
+  line-height: 1.6;
 }
 </style>
